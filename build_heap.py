@@ -41,7 +41,7 @@ def main():
     if "I" in source:
         n = int(input())
         data = list(map(int, input().split()))
-    elif "F" in text:
+    elif "F" in source:
         source2 = input()
         if "a" in source2:
             return()
