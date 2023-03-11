@@ -17,6 +17,9 @@ def heapify(data, n, i, swaps):
 
 def build_heap(data):
     swaps = []
+    n = len(data)
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(data, n, i, swaps)
     # TODO: Creat heap and heap sort
     # try to achieve  O(n) and not O(n2)
 
