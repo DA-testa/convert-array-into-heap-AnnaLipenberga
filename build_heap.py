@@ -50,7 +50,7 @@ def main():
 
     # TODO: output how many swaps were made, 
     # this number should be less than 4n (less than 4*len(data))
-    assert 0 <= len(swas) <= 4*n
+    assert 0 <= len(swaps) <= 4*n
 
 
     # output all swaps
