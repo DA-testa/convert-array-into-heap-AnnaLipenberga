@@ -36,7 +36,7 @@ def main():
 
 
     # input from keyboard
-    while True:
+    
     source = input()
     if "I" in source:
         n = int(input())
