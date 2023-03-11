@@ -32,6 +32,7 @@ def main():
     # TODO : add input and corresponding checks
     # add another input for I or F 
     # first two tests are from keyboard, third test is from a file
+ 
 
 
     # input from keyboard
@@ -40,6 +41,8 @@ def main():
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
+    assert 1 <= n <= 10**9 for a in data)
+    assert all(0 <= a <= 10**9 for a in data)
 
     # calls function to assess the data 
     # and give back all swaps
