@@ -36,8 +36,19 @@ def main():
 
 
     # input from keyboard
-    n = int(input().strip())
-    data = list(map(int, input().split()))
+    text = input()
+    if "I" in text:
+        n = int(input())
+        data = list(map(int, input().split()))
+    elif "F" in text:
+        text2 = input()
+        if "a" in text2:
+            return()
+        with open ("tests/"+text2, encoding="utf-8") as fails:
+            n = int (fails.readline())
+            data = list(map(int, fails.readline().split()))
+    else:
+        return()
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
