@@ -41,7 +41,7 @@ def main():
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
-    assert 1 <= n <= 10**9 for a in data)
+    assert 1 <= n <= 10**5
     assert all(0 <= a <= 10**9 for a in data)
 
     # calls function to assess the data 
