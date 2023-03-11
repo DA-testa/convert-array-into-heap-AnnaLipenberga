@@ -36,15 +36,16 @@ def main():
 
 
     # input from keyboard
-    text = input()
-    if "I" in text:
+    while True:
+    source = input()
+    if "I" in source:
         n = int(input())
         data = list(map(int, input().split()))
     elif "F" in text:
-        text2 = input()
-        if "a" in text2:
+        source2 = input()
+        if "a" in source2:
             return()
-        with open ("tests/"+text2, encoding="utf-8") as fails:
+        with open ("tests/"+source2, encoding="utf-8") as fails:
             n = int (fails.readline())
             data = list(map(int, fails.readline().split()))
     else:
